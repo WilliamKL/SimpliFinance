@@ -77,9 +77,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django_cockroachdb',
+        'NAME': 'simpli-finance',
+        'USER': 'gillian',
+        'PASSWORD': 'e72wtL9fzgzNyUf5tOr8aQ',
+        'HOST': 'free-tier11.gcp-us-east1.cockroachlabs.cloud',
+        'PORT': '26257',
+        'OPTIONS': {
+            'sslmode': 'verify-full',
+            'options': '--cluster=simpli-finance-2462'
+        },
+    },
 }
 
 
