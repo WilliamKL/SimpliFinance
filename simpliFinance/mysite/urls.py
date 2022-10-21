@@ -14,11 +14,40 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+# from django.http import HttpResponse
+from django.shortcuts import render
+from .views import CustomersView, OrdersView, PingView, ProductView
+
+
+def landingPage(request):
+    return render(request, 'index.html')
+
 
 urlpatterns = [
+    path('', landingPage, name='landing'),
+    # path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+
+    path('ping/', PingView.as_view()),
+
+    # Endpoints for customers URL.
+    path('customer/', CustomersView.as_view(), name='customers'),
+    path('customer/<uuid:id>/', CustomersView.as_view(), name='customers'),
+
+    # Endpoints for customers URL.
+    path('product/', ProductView.as_view(), name='product'),
+    path('product/<uuid:id>/', ProductView.as_view(), name='product'),
+
+    path('order/', OrdersView.as_view(), name='order'),
 ]
+
+# from django.contrib import admin
+# from django.urls import path
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+# ]
 
 # from django.contrib import admin
 # from django.urls import path, include
