@@ -75,10 +75,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django_cockroachdb',
-        'NAME': 'simpli-finance',
+        'NAME': 'defaultdb',
         'USER': 'gillian',
         'PASSWORD': 'e72wtL9fzgzNyUf5tOr8aQ',
         'HOST': 'free-tier11.gcp-us-east1.cockroachlabs.cloud',
@@ -89,7 +96,6 @@ DATABASES = {
         },
     },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
