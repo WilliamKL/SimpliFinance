@@ -1,7 +1,8 @@
 # Simpli Finance Budget Repo
 Take control of your finances. Your money, simplified.
 
-Navigate to simpli-finance.onrender.com
+Navigate to www.simpli-finance.onrender.com
+
 _Currently if you click on any button or try to navigate elsewhere, the site will error out._
 _It is just a homepage landing for the moment and will be updated in the near future._
 
