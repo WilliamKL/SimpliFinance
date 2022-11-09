@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-# from django.http import HttpResponse
 from django.shortcuts import render
 from .views import CustomersView, OrdersView, PingView, ProductView
 
@@ -26,7 +25,6 @@ def landingPage(request):
 
 urlpatterns = [
     path('', landingPage, name='landing'),
-    # path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 
     path('ping/', PingView.as_view()),
@@ -41,18 +39,3 @@ urlpatterns = [
 
     path('order/', OrdersView.as_view(), name='order'),
 ]
-
-# from django.contrib import admin
-# from django.urls import path
-#
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-# ]
-
-# from django.contrib import admin
-# from django.urls import path, include
-#
-#
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     path('', include('render.urls'))]
