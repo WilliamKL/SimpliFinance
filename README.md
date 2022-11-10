@@ -1,17 +1,16 @@
 ## Simpli Finance Budget Repo
-Take control of your finances. Your money, simplified.
+###### Take control of your finances. Your money, simplified.
 
 The original intent of this project was to create a budget website that lets user enter their financial information across different expense and income categories.
 The website would then total everything to come up with a monthly budget amount of total expenses, income, and money leftover. 
 We planned to also give users the ability to create multiple named budgets that could be seen under their login profile. 
-We were not able to fulfill all of the original outline ideas and features for this website unfortunately. 
 
 Navigate to www.simpli-finance.onrender.com
 
 _Currently if you click on any button or try to navigate elsewhere, the site will error out._
-_This was meant as a mock homepage in order to be able to set up the rest of the Django app and deploy on Render successfully.._
+_This was meant as a mock homepage in order to be able to set up the rest of the Django app and deploy on Render successfully._
 
-###### Requirements to run files:
+###### Requirements to run downloaded zip file:
 - virtualenv
 - Python 3.8 or higher
 
@@ -19,14 +18,27 @@ _This was meant as a mock homepage in order to be able to set up the rest of the
 - psycopg2-binary
 - django==4.1
 - django-cockroachdb==4.1
+- gunicorn==20.1.0
+- whitenoise==6.2.0
 
-###### Follow these steps:
-- Use the command prompt to navigate inside the downloaded file SimpliFinance _(use the 'cd' command)_
-- Use 'pip install virtualenv' if not already installed
-- Enter 'virtualenv env'
-- Navigate to env folder with 'cd env'
-- Enter 'Scripts\activate' _This starts the virtual environment_
-- Navigate back to main SimpliFinance with 'cd <insert file path>'
-- Enter 'pip install -r requirements.txt'
-- Once the libraries have been installed, then you can run the command 'python manage.py runserver'
-- At which point 
+###### Follow these steps to run files from your computer:
+1. Use the command prompt to navigate inside the downloaded file SimpliFinance _(use the `cd` command)_
+2. Use `pip install virtualenv` if not already installed
+3. Enter `virtualenv env`
+4. Navigate to env folder with `cd env`
+5. Enter `Scripts\activate` _This starts the virtual environment_
+6. Navigate back to main SimpliFinance with `cd <insert file path>`
+7. Enter `pip install -r requirements.txt`
+8. Once the libraries have been installed, then you can run the command `python manage.py runserver`
+9. At which point, the below text should appear:
+ ```
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 13, 2020 - 19:49:23
+Django version 3.0.6, using settings 'project.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+10. Copy the IP address and paste into a browswer to see the project live. The same home page from the Render site will appear at the IP address
