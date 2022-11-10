@@ -7,6 +7,7 @@ We planned to also give users the ability to create multiple named budgets that 
 We were not able to fulfill all of the original outline ideas and features for this website unfortunately. 
 
 Navigate to www.simpli-finance.onrender.com
+
 _Currently if you click on any button or try to navigate elsewhere, the site will error out._
 _This was meant as a mock homepage in order to be able to set up the rest of the Django app and deploy on Render successfully.._
 
