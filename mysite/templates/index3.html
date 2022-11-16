@@ -1,147 +1,128 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simpli Finance Budgets</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-  </body>
-<!--<nav class="navbar" style="background-color: #F6FBDB;">-->
-<!--  <div class="container-fluid">-->
-<!--    <a class="navbar-brand" href="#">Simpli Finance</a>-->
-<!--    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--      <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-<!--    <div class="collapse navbar-collapse" id="navbarNav">-->
-<!--      <ul class="navbar-nav">-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link active" aria-current="page" href="#home">Home</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#about">About Us</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="#makingabudget">Making A Budget</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link" href="examples">Examples</a>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</nav>-->
-  <nav class="navbar navbar-expand-lg" style="background-color: #F6FBDB;>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+
+<nav class="navbar navbar-expand-lg" style="background-color: #F6FBDB;>
   <div class="container-fluid">
-  <a class="navbar-brand" href="#">Simpli Finance</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          <a class="nav-link" href="#about">About Us</a>
-          <a class="nav-link" href="#makingabudget">Making a Budget</a>
-          <a class="nav-link" href="#example">Example Budgets</a>
-      </div>
-  </div>
-  </div>
-  </nav>
-  <header class="masthead bg-success p-2 text-dark bg-opacity-25 text-center">
-      <div class="container d-flex align-items-center flex-column">
-          <!-- Masthead Avatar Image-->
-          <img class="masthead-avatar mb-5" src="https://cdn.icon-icons.com/icons2/516/PNG/512/cash_icon-icons.com_51090.png" alt="Money budget icon" width="15%" height="auto">
-          <!-- Masthead Heading-->
-          <h1 class="masthead-heading text-uppercase mb-0">Simpli Finance</h1>
-          <!-- Icon Divider-->
-          <div class="divider-custom divider-light">
-              <div class="divider-custom-line"></div>
-<!--              <div class="divider-custom-line"></div>-->
-          </div>
-          <!-- Masthead Subheading-->
-          <p class="masthead-subheading font-weight-light mb-0">Take control of your finances. Your money, simplified.</p>
-      </div>
-  </header>
+<a class="navbar-brand" href="#">   Simpli Finance</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        <a class="nav-link" href="#about">About Us</a>
+        <a class="nav-link" href="#makingabudget">Making a Budget</a>
+        <a class="nav-link" href="#example">Example Budgets</a>
+    </div>
+</div>
+</div>
+</nav>
+<header class="masthead bg-success p-2 text-dark bg-opacity-25 text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="https://cdn.icon-icons.com/icons2/516/PNG/512/cash_icon-icons.com_51090.png" alt="Money budget icon" width="15%" height="auto">
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Simpli Finance</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Take control of your finances. Your money, simplified.</p>
+    </div>
+</header>
 <section class="content-section bg-success p-2 text-dark bg-opacity-25 text-center" id="home">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h2 class="mb-5">What We Offer</h2>
-                    <h4>Our website is designed to teach you how to budget your money and take back control of your finances.</h4>
-                    <h4> You will learn how to track your money and improve your monthly savings all in one.</h4>
-                </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <img src="https://img.icons8.com/ios/512/smartphone.png" width="100" height="auto" alt="Smartphone Icon">
-                        <h4><strong>Accessible</strong></h4>
-                        <p class="text-faded mb-0">This website looks great on any screen size!</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <img src="https://img.icons8.com/pastel-glyph/512/monitor.png" width="100" height="auto" alt="Computer Icon">
-                        <h4><strong>Easy To Follow</strong></h4>
-                        <p class="text-faded mb-0">Understandable language and examples on budgets.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <img src="https://img.icons8.com/ios/512/facebook-like.png" alt="Like Icon" width="100" height="auto">
-                        <h4><strong>Favorited</strong></h4>
-                        <p class="text-faded mb-0">Thousands of customers use our budgeting tips.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <img src="https://img.icons8.com/ios/512/guest-male.png" alt="User Icon" width="100" height="auto">
-                        <h4><strong>User Friendly</strong></h4>
-                        <p class="text-faded mb-0">Our site is easy to navigate and understand the budgeting and financial content.</p>
-                    </div>
-                </div>
+    <div class="container px-4 px-lg-5">
+        <div class="content-section-heading">
+            <h2 class="mb-5">What We Offer</h2>
+            <p> Our website is designed to teach you how to budget your money and take back control of your finances.</p>
+            <p> You will learn how to track your money and improve your monthly savings all in one.</p>
+            <br>
+        </div>
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <img src="https://img.icons8.com/ios/512/smartphone.png" width="100" height="auto" alt="Smartphone Icon">
+                <h4><strong>Accessible</strong></h4>
+                <p class="text-faded mb-0">This website looks great on any screen size!</p>
             </div>
-        </section>
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <img src="https://img.icons8.com/pastel-glyph/512/monitor.png" width="100" height="auto" alt="Computer Icon">
+                <h4><strong>Easy To Follow</strong></h4>
+                <p class="text-faded mb-0">Understandable language and examples on budgets.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                <img src="https://img.icons8.com/ios/512/facebook-like.png" alt="Like Icon" width="100" height="auto">
+                <h4><strong>Favorited</strong></h4>
+                <p class="text-faded mb-0">Thousands of customers use our budgeting tips.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img src="https://img.icons8.com/ios/512/guest-male.png" alt="User Icon" width="100" height="auto">
+                <h4><strong>User Friendly</strong></h4>
+                <p class="text-faded mb-0">Our site is easy to navigate and understand the budgeting and financial content.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+</section>
 <section class="page-section bg-success p-2 text-white bg-opacity-50 mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About Us</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Simpli Finance is a free budgeting website that uses Render, Django, and Bootstrap to run the site. The download link below connects to Microsoft’s website with free Excel budget templates that can be customized to suit your needs.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">This website will go over in detail how to create your own budget, the kind of information needed, how to track your expenses, collate your financial information, and find ways to save additional money monthly.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://templates.office.com/en-us/easy-monthly-budget-tm16410094">
-                        <svg class="svg-inline--fa fa-download me-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download" width="100" height="auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"></path></svg><!-- <i class="fas fa-download me-2"></i> Font Awesome fontawesome.com -->
-                        Download Your Budget Now!
-                    </a>
-                </div>
+    <div class="container">
+        <!-- About Section Heading-->
+        <br>
+        <h2 class="page-section-heading text-center text-uppercase text-white">About Us</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">Simpli Finance is a free budgeting website that uses Render, Django, and Bootstrap to run the site. The download link below connects to Microsoft’s website with free Excel budget templates that can be customized to suit your needs.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">This website will go over in detail how to create your own budget, the kind of information needed, how to track your expenses, collate your financial information, and find ways to save additional money monthly.</p></div>
+        </div>
+        <!-- About Section Button-->
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="https://templates.office.com/en-us/easy-monthly-budget-tm16410094">
+                <svg class="svg-inline--fa fa-download me-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download" width="100" height="auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M480 352h-133.5l-45.25 45.25C289.2 409.3 273.1 416 256 416s-33.16-6.656-45.25-18.75L165.5 352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96C512 366.3 497.7 352 480 352zM432 456c-13.2 0-24-10.8-24-24c0-13.2 10.8-24 24-24s24 10.8 24 24C456 445.2 445.2 456 432 456zM233.4 374.6C239.6 380.9 247.8 384 256 384s16.38-3.125 22.62-9.375l128-128c12.49-12.5 12.49-32.75 0-45.25c-12.5-12.5-32.76-12.5-45.25 0L288 274.8V32c0-17.67-14.33-32-32-32C238.3 0 224 14.33 224 32v242.8L150.6 201.4c-12.49-12.5-32.75-12.5-45.25 0c-12.49 12.5-12.49 32.75 0 45.25L233.4 374.6z"></path></svg><!-- <i class="fas fa-download me-2"></i> Font Awesome fontawesome.com -->
+                Download Your Budget Now!
+            </a>
+        </div>
+    </div>
+</section>
+<section class="content-section bg-success p-2 white bg-opacity-50 text-white text-center">
+    <div class="container px-3 px-lg-5">
+        <br>
+        <div class="content-section-heading">
+            <h2 class="mb-5">Who We Are</h2>
+            <h4>Meet our team!</h4>
+        </div>
+        <div class="row gx-3 gx-lg-5">
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <img src="https://www.hardypedoortho.com/wp-content/uploads/LingualHardy3.jpg" width="150" height="auto" alt="Woman Professional Headshot">
+                <h4><strong>Gillian Braun</strong></h4>
+                <p class="text-faded mb-0">Gillian has been working at Simpli Finance since the beginning and is responsible for the backend code and website design.</p>
             </div>
-        </section>
-  <section class="content-section bg-success p-2 white bg-opacity-50 text-center" id="home">
-      <div class="container px-4 px-lg-5">
-          <div class="content-section-heading">
-              <h2 class="mb-5">Who We Are</h2>
-              <h4>Meet our team!</h4>
-          </div>
-          <div class="row gx-4 gx-lg-5">
-              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                  <img src="https://www.hardypedoortho.com/wp-content/uploads/LingualHardy3.jpg" width="150" height="auto" alt="Woman Professional Headshot">
-                  <h4><strong>Gillian Braun</strong></h4>
-                  <p class="text-faded mb-0">Gillian has been working at Simpli Finance since the beginning and is responsible for the backend code and website design.</p>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                  <img src="https://media.istockphoto.com/id/173272751/photo/close-up-of-smiling-young-dark-skinned-man.jpg?s=612x612&w=0&k=20&c=_P4J_nezQaAQQh5vHFa5DFmPPcl9dpEX1kvsBhRpdP4=" width="150" height="auto" alt="Man Professional Headshot">
-                  <h4><strong>William Lovelace</strong></h4>
-                  <p class="text-faded mb-0">William is responsible for the database side of this website and also one of the original employees.</p>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                  <img src="https://cdn.create.vista.com/api/media/small/22064725/stock-photo-happy-smiling-girl" alt="Woman Professional Headshot" width="150" height="auto">
-                  <h4><strong>Fatima Edmondson</strong></h4>
-                  <p class="text-faded mb-0">Fatima is the sales and advertising director for our website and joined not long after we launched the business.</p>
-          </div>
-      </div>
-  </section>
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <img src="https://media.istockphoto.com/id/173272751/photo/close-up-of-smiling-young-dark-skinned-man.jpg?s=612x612&w=0&k=20&c=_P4J_nezQaAQQh5vHFa5DFmPPcl9dpEX1kvsBhRpdP4=" width="150" height="auto" alt="Man Professional Headshot">
+                <h4><strong>William Lovelace</strong></h4>
+                <p class="text-faded mb-0">William is responsible for the database side of this website and also one of the original employees.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                <img src="https://cdn.create.vista.com/api/media/small/22064725/stock-photo-happy-smiling-girl" alt="Woman Professional Headshot" width="150" height="auto">
+                <h4><strong>Fatima Edmondson</strong></h4>
+                <p class="text-faded mb-0">Fatima is the sales and advertising director for our website and joined not long after we launched the business.</p>
+            </div>
+        </div>
+        <br>
+</section>
 </html>
