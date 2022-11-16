@@ -1,14 +1,10 @@
 ## Simpli Finance Budget Website README
 #### Take control of your finances. Your money, simplified.
 
-The original intent of this project was to create a budget website that lets user enter their financial information across different expense and income categories.
-The website would then total everything to come up with a monthly budget amount of total expenses, income, and money leftover. 
-We planned to also give users the ability to create multiple named budgets that could be seen under their login profile. 
+The website is a static one page site that educates users on how to make a budget, where you can download pre-existing budgets, and offers budget examples. 
+The goal of the website is to help users take control of their finances again and focus on ways to improve saving money and lowering expenses. 
 
 Navigate to www.simpli-finance.onrender.com to see the site live on Render.
-
-_Currently if you click on any button or try to navigate elsewhere, the site will error out._
-_This was meant as a mock homepage in order to be able to set up the rest of the Django app and deploy on Render successfully._
 
 ##### Requirements to run downloaded GitHub zip file:
 - virtualenv
