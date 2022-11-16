@@ -88,7 +88,7 @@ DATABASES = {
         'HOST': 'free-tier11.gcp-us-east1.cockroachlabs.cloud',
         'PORT': '26257',
         'OPTIONS': {
-            'sslmode': 'verify-full',
+#             'sslmode': 'verify-full',
             'options': '--cluster=simpli-finance-2462'
         },
     },
