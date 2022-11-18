@@ -23,7 +23,7 @@ Navigate to www.simpli-finance.onrender.com to see the site live on Render.
 3. Enter `virtualenv env`
 4. Navigate to env folder with `cd env`
 5. Enter `Scripts\activate` _This starts the virtual environment_
-6. Navigate back to main SimpliFinance with `cd <insert file path>`
+6. Navigate back to main SimpliFinance file with `cd <insert file path>`
 7. Enter `pip install -r requirements.txt`
 8. Once the libraries have been installed, then you can run the command `python manage.py runserver`
 9. At which point, the below text should appear:
