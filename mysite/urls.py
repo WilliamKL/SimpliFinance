@@ -20,7 +20,7 @@ from .views import CustomersView, OrdersView, PingView, ProductView
 
 
 def landingPage(request):
-    return render(request, 'index3.html')
+    return render(request, 'index.html')
 
 
 urlpatterns = [
