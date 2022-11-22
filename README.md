@@ -1,7 +1,7 @@
 ## Simpli Finance Budget Website README
 #### Take control of your finances. Your money, simplified.
 
-The website is a static one page site that educates users on how to make a budget, where you can download pre-existing budgets, and offers budget examples. 
+The website is a static one-page site that educates users on how to make a budget, where you can download pre-existing budgets, and offers budget examples. 
 The goal of the website is to help users take control of their finances again and focus on ways to improve saving money and lowering expenses. 
 
 Navigate to www.simpli-finance.onrender.com to see the site live on Render.
@@ -37,4 +37,4 @@ Django version 4.1, using settings 'mysite.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
-10. Copy the IP address and paste into a browswer to see the project live. The same home page from the Render site will appear at the IP address
+10. Copy the IP address and paste into a browser to see the project live. The same home page from the Render site will appear at the IP address
