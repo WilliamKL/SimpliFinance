@@ -227,7 +227,15 @@
             </div>
         </div>
     </div>
-</section>
+    <div>
+        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+            <h2>Monthly Pricing:</h2>
+            {% for prod in product %}
+            <h3 class="fs-4 fw-bold">{{prod.name}}</h3>
+            <p class="fw-bold">${{prod.price}} Per Month</p>
+            {% endfor %}
+        </div>
+    </div>
 <!--Database-Sourced Information-->
 <!--Our Products Name and Pricing-->
 <section class="pt-2">
@@ -240,7 +248,6 @@
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
                         <img src="https://img.icons8.com/office/512/average-2.png" alt="Bronze money icon" width="100" height="auto">
                         <h2 class="fs-4 fw-bold">Simpli Finance Bronze</h2>
-                        <h2 class="fs-4">Price: </h2>
                         <ul class="mb-0" style="text-align:left">
                             <li>2 Budgets</li>
                             <li>10 Changes Per Month</li>
@@ -256,7 +263,6 @@
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
                         <img src="https://img.icons8.com/ultraviolet/512/average-2.png" alt="Silver money icon" width="100" height="auto">
                         <h2 class="fs-4 fw-bold">Simpli Finance Silver</h2>
-                        <h2 class="fs-4">Price: </h2>
                         <ul class="mb-0" style="text-align:left">
                             <li>5 Budgets</li>
                             <li>20 Changes Per Month</li>
@@ -272,7 +278,6 @@
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
                         <img src="https://img.icons8.com/dusk/512/average-2.png" alt="Gold money icon" width="100" height="auto">
                         <h2 class="fs-4 fw-bold">Simpli Finance Gold</h2>
-                        <h2 class="fs-4">Price: </h2>
                         <ul class="mb-0" style="text-align:left">
                             <li>10 Budgets</li>
                             <li>Unlimited Changes Per Month</li>
@@ -285,6 +290,7 @@
             </div>
         </div>
     </div>
+</section>
 </section>
 <!--Screen Wide Image Section Divider-->
 <div class="py-5 bg-image-full" style="background-image: url('https://previews.123rf.com/images/naphotos/naphotos1509/naphotos150900151/46080356-stock-market-concept-and-background.jpg')">

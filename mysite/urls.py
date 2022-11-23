@@ -17,12 +17,20 @@ from django.contrib import admin
 from django.urls import include, path
 from django.shortcuts import render
 from .views import CustomersView, OrdersView, PingView, ProductView
-
+import requests
+import json
 
 def landingPage(request):
-    return render(request, 'index.html')
+    print()
+    product = getInfo(request.get_port() )
+    print(product)
+    return render(request, 'index.html', {"product": product})
 
-
+def getInfo(rooturl):
+    url = "http://127.0.0.1:" + rooturl + "/product"
+    api_call = requests.get(url, headers={})
+    return json.loads(api_call.content)
+    
 urlpatterns = [
     path('', landingPage, name='landing'),
     path('admin/', admin.site.urls),
