@@ -20,17 +20,20 @@ from .views import CustomersView, OrdersView, PingView, ProductView
 import requests
 import json
 
+
 def landingPage(request):
-    print()
-    product = getInfo(request.get_port() )
-    print(product)
+#     print()
+    product = getInfo(request.get_port())
+#     print(product)
     return render(request, 'index.html', {"product": product})
+
 
 def getInfo(rooturl):
     url = "http://127.0.0.1:" + rooturl + "/product"
     api_call = requests.get(url, headers={})
     return json.loads(api_call.content)
-    
+
+
 urlpatterns = [
     path('', landingPage, name='landing'),
     path('admin/', admin.site.urls),
