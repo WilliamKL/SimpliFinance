@@ -22,14 +22,15 @@ import json
 
 
 def landingPage(request):
-#     print()
+    print()
     product = getInfo(request.get_port())
-#     print(product)
+    print(product)
     return render(request, 'index.html', {"product": product})
 
 
 def getInfo(rooturl):
-    url = "http://127.0.0.1:" + rooturl + "/product"
+#     url = "http://127.0.0.1:" + rooturl + "/product"
+    url = "127.0.0.1:10000/customer"
     api_call = requests.get(url, headers={})
     return json.loads(api_call.content)
 
