@@ -29,8 +29,8 @@ def landingPage(request):
 
 
 def getInfo(rooturl):
-    url = "http://simpli-finance.onrender.com:" + rooturl + "/product"
-#     url = "http://simpli-finance.onrender.com"
+#     url = "http://simpli-finance.onrender.com:" + rooturl + "/product"
+    url = "http://simpli-finance.onrender.com/product"
     api_call = requests.get(url, headers={})
     return json.loads(api_call.content)
 
