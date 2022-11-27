@@ -30,7 +30,7 @@ def landingPage(request):
 
 def getInfo(rooturl):
 #     url = "http://127.0.0.1:" + rooturl + "/product"
-    url = "http://127.0.0.1:10000/customer"
+    url = "http://127.0.0.1:10000/product"
     api_call = requests.get(url, headers={})
     return json.loads(api_call.content)
 
