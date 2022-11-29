@@ -23,16 +23,17 @@ import json
 
 def landingPage(request):
     print()
-    product = getInfo(request.get_port())
+#     product = getInfo(request.get_port())
+    product = [{"name": "Simpli Finance Bronze", "price": "3.99"}, {"name": "Simpli Finance Silver", "price": "5.99"}, {"name": "Simpli Finance Gold", "price": "7.99"}]
     print(product)
     return render(request, 'index.html', {"product": product})
 
 
-def getInfo(rooturl):
-#     url = "http://simpli-finance.onrender.com:" + rooturl + "/product"
-    url = "http://simpli-finance.onrender.com/product"
-    api_call = requests.get(url, headers={})
-    return json.loads(api_call.content)
+# def getInfo(rooturl):
+#     url = "http://127.0.0.1:" + rooturl + "/product"
+#     url = "http://0.0.0.0:10000/product"
+#     api_call = requests.get(url, headers={})
+#     return json.loads(api_call.content)
 
 
 urlpatterns = [
