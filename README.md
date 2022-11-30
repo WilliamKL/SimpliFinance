@@ -4,7 +4,7 @@
 The website is a static one-page site that educates users on how to make a budget, where you can download pre-existing budgets, and offers budget examples. 
 The goal of the website is to help users take control of their finances again and focus on ways to improve saving money and lowering expenses. 
 
-Navigate to www.simpli-finance.onrender.com to see the site live on Render.
+Navigate to https://simpli-finance.onrender.com/ to see the site live on Render.
 
 ##### Requirements to run downloaded GitHub zip file:
 - virtualenv
